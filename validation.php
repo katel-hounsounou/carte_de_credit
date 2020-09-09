@@ -8,23 +8,42 @@
 
     <title>Validation</title>
 </head>
-<body>
-    <h1> Validation des entrées </h1>
-    <p class="col-md-4 offset-md-3">
-        <img src="Images/card.jpg" alt="">
-    </p>
-    <?php
+<body class="col-md-4 offset-md-4">
+    <h1 class="text-center mb 4"> Validation des entrées </h1>
+        <?php
         if(isset ($_POST['nombre']) AND isset($_POST['nom']) AND isset($_POST['mois']) AND isset($_POST['annee']) AND isset($_POST['cvv']))
         {
             
         
     ?>
-        <p> Votre numéro de carte est: <?php  echo $_POST['nombre']; ?> </p>
-        <p> Votre nom est: <?php  echo $_POST['nom']; ?> </p>
-        <p> Le mois sélectionné est: <?php  echo $_POST['mois']; ?> </p>
-        <p> L'année sélectionnée est: <?php  echo $_POST['annee']; ?> </p>
-        <p> Le CVV sélectionné est: <?php  echo $_POST['cvv']; ?> </p>
-        
+    <table class="table table-sm" >
+            <tr class="table-primary">
+                <td> <p> Votre numéro de carte est: </td>
+                <td> <?php  echo $_POST['nombre']; ?> </p> </td>
+            </tr>
+
+            <tr class="table-primary">
+                <td> <p> Votre nom est: </td>
+                <td> <?php  echo $_POST['nom']; ?> </p> </td>
+            </tr>
+
+            <tr class="table-primary">
+                <td> <p> Le mois sélectionné est: </td>
+                <td> <?php  echo $_POST['mois']; ?> </p> </td>
+            </tr>
+
+            <tr class="table-primary">
+                <td> <p> L'année sélectionnée est: </td>
+                <td> <?php  echo $_POST['annee']; ?> </p> </td>
+            </tr>
+
+            <tr class="table-primary">
+                <td> <p> Le CVV sélectionné est: </td>
+                <td> <?php  echo $_POST['cvv']; ?> </p> </td>
+            </tr>
+   
+    
+        </table>    
      <?php 
         }
         else
