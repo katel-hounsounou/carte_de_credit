@@ -10,46 +10,44 @@
 
     <title>Carte de credit</title>
   </head>
-  <body class="col-md-4 offset-md-4"">
-    <h1 class="text-center mb 4">Carte de crédit</h1>
-    <form class="form-signin">
+  <body class="col-md-4 offset-md-4">
+    <h1 class="text-center mb 4">Carte de crédit </h1>
+    <form class="form-signin"  method="POST" action="validation.php">
         
         <div class="form-group">
           <label for="inputAddress">Card Number</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="">
+          <input type="text" name ="nombre" Required class="form-control" id="inputAddress" placeholder="">
         </div>
         <div class="form-group">
           <label for="inputAddress2">Card Name</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="">
+          <input type="text" name ="nom" Required class="form-control" id="inputAddress2" placeholder="">
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputCity">Month</label>
-            <select id="inputState" class="form-control">
+            <select id="inputState" name ="mois" Required class="form-control">
                 <option selected>September</option>
-                 <option selected>September</option>
-                 <option> January</option>
-                 <option> February</option>
-                 <option> March</option>
-                 <option> April</option>
-                 <option> May</option>
-                 <option> June</option>
-                 <option> July</option>
-                 <option> August</option>
-                 <option> September</option>
-                 <option> October</option>
-                 <option> November</option>
-                 <option> December</option>
+                <option> January</option>
+                <option> February</option>
+                <option> March</option>
+                <option> April</option>
+                <option> May</option>
+                <option> June</option>
+                <option> July</option>
+                <option> August</option>
+                <option> October</option>
+                <option> November</option>
+                <option> December</option>
               </select>
            
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">Year</label>
-            <input type="number" class="form-control" id="inputZip">
+            <input type="number" name ="annee" Required class="form-control" id="inputZip">
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">CVV</label>
-            <input type="number" class="form-control" id="inputAddress" placeholder="">
+            <input type="number" name ="cvv" Required class="form-control" id="inputAddress" placeholder="">
           </div>
         </div>
         
